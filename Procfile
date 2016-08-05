@@ -1,1 +1,1 @@
-provider: rackup --port $PROVIDER_PORT provider.ru
+provider: rackup --port $PROVIDER_PORT config.ru
