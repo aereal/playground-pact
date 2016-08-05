@@ -5,3 +5,9 @@ Pact.service_provider 'Oneetyan Service'do
     pact_uri File.expand_path('../pacts/oneetyan_client-oneetyan_service.json', __dir__)
   end
 end
+
+Pact.provider_states_for 'Oneetyan Client' do
+  provider_state 'some oneetyan exists' do
+    no_op
+  end
+end
