@@ -2,7 +2,7 @@ require 'oneetyan/consumer'
 
 require 'pact/consumer/rspec'
 
-Pact.service_consumer 'Oneetyan' do
+Pact.service_consumer 'Oneetyan Client' do
   has_pact_with 'Oneetyan Service' do
     mock_service :oneetyan_service do
       port 8888
